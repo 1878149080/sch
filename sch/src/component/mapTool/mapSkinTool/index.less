@@ -1,0 +1,72 @@
+.mapTool2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 5;
+
+  .list {
+    float: left;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    //border-radius: ;
+    background: rgba(255, 255, 255, 255, 0.65);
+
+    & + .list {
+      margin-left: 4px;
+    }
+
+    .iconfont {
+      color: #555;
+      font-size: 26px;
+      line-height: 28px;
+    }
+
+    img {
+      width: 24px;
+      height: 24px;
+      margin: 2px;
+    }
+  }
+  .list2 {
+    position: relative;
+    float: left;
+    margin-right: 4px;
+    & > .anticon-search,
+    & > .anticon-close {
+      position: absolute;
+      top: 9px;
+      right: 10px;
+      z-index: 2;
+      font-size: 10px;
+      color: #555;
+    }
+    & > .iconfont {
+      position: absolute;
+      top: 7px;
+      right: 10px;
+      z-index: 2;
+      font-size: 10px;
+      color: #555;
+    }
+    & > .anticon-close,
+    &:hover > .anticon-search {
+      display: none;
+    }
+    &:hover > .anticon-close {
+      display: inline-block;
+      cursor: pointer;
+    }
+    .ant-select {
+      width: 177px;
+      .ant-select-selector {
+        border-radius: 28px;
+        padding-left: 11px;
+        padding-left: 11px;
+      }
+    }
+    .ant-select-single .ant-select-selector .ant-select-selection-search {
+      left: 11px;
+    }
+  }
+}

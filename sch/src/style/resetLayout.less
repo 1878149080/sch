@@ -1,0 +1,75 @@
+@import 'reset/reset';
+
+.ant-layout {
+  background: transparent !important;
+}
+
+// 卡片重置圆角
+.ant-card {
+  border-radius: 10px !important;
+
+  .ant-card-extra {
+    font-size: 12px !important;
+
+    .ant-divider-vertical {
+      margin-right: 6px;
+      margin-left: 6px;
+    }
+  }
+
+  .ant-card-body {
+    padding: 0 !important;
+  }
+}
+
+// iconfont
+.iconfont {
+  cursor: pointer;
+
+  & + .iconfont {
+    margin-left: 10px;
+  }
+
+  &:hover {
+    color: @main-color;
+  }
+}
+
+// 图标不可以点的样式
+.disabled-icon {
+  cursor: not-allowed !important;
+  color: rgba(118, 118, 118, 0.3) !important;
+}
+
+// 表格过滤 - 过滤弹窗样式重置
+.ant-table-filter-dropdown {
+  .ant-dropdown-menu-item {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 12px;
+
+    .ant-checkbox-wrapper {
+      font-size: 12px;
+
+      .ant-checkbox {
+        font-size: 12px;
+
+        .ant-checkbox-inner {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+  }
+
+  .ant-table-filter-dropdown-btns {
+    button {
+      font-size: 12px;
+    }
+
+    .ant-btn {
+      height: 20px !important;
+      line-height: 20px !important;
+    }
+  }
+}

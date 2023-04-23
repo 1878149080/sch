@@ -1,0 +1,758 @@
+.maxMapBox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  .iconfont:active {
+    color: #54A4FF;
+  }
+
+  .iconfont:hover {
+    color: #54A4FF;
+  }
+
+  .number {
+    position: absolute;
+    top: 115px;
+    width: 101px;
+    left: 9px;
+    background-color: #fff;
+    opacity: 0.65;
+
+    .ant-input-number-handler-wrap {
+      opacity: 1;
+    }
+
+    .ant-input-number {
+      width: 101px;
+    }
+  }
+
+  .disabledAreanumber {
+    position: absolute;
+    top: 85px;
+    width: 101px;
+    left: 9px;
+    background-color: #fff;
+    opacity: 0.65;
+
+    .ant-input-number-handler-wrap {
+      opacity: 1;
+    }
+
+    .ant-input-number {
+      width: 101px;
+    }
+  }
+
+  .leftBox {
+    position: absolute;
+    top: 8px;
+    left: 9px;
+
+    //.input {
+    //  width: 101px;
+    //  border-radius: 10px;
+    //  border: none;
+    //  position: relative;
+    //  input{
+    //    border-radius: 20px;
+    //    border: none;
+    //  }
+    //  span{
+    //    position: absolute;
+    //    right: 10px;
+    //    top: 9px
+    //  }
+    //  span:hover{
+    //    color: #4fa1ff;
+    //  }
+    //}
+    div {
+      width: 101px;
+      height: 28px;
+      opacity: 0.65;
+      background-color: #fff;
+      margin-bottom: 10px;
+      font-size: 12px;
+      font-family: Microsoft YaHei;
+      font-weight: bold;
+      color: #555555;
+      line-height: 28px;
+      text-align: center;
+      cursor: pointer;
+
+      span {
+        margin-right: 2px;
+      }
+    }
+  }
+
+  .rightBox {
+    position: absolute;
+    top: 8px;
+    right: 9px;
+    display: flex;
+
+    .ant-checkbox-wrapper {
+      line-height: 26px;
+    }
+
+    .ant-input {
+      border: none;
+    }
+
+    .list2 {
+      position: relative;
+      float: left;
+      margin-right: 4px;
+
+      .ant-select-single:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-search-input {
+        display: block;
+        height: 26px;
+      }
+
+      .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        border: none;
+      }
+
+      & > .anticon-search {
+        position: absolute;
+        top: 9px;
+        right: 10px;
+        z-index: 2;
+        font-size: 10px;
+        color: #555;
+      }
+
+      & > .anticon-close-circle {
+        position: absolute;
+        top: 9px;
+        right: 10px;
+        z-index: 2;
+        font-size: 10px;
+        color: #555;
+      }
+
+      & > .iconfont {
+        position: absolute;
+        top: 7px;
+        right: 10px;
+        z-index: 2;
+        font-size: 10px;
+        color: #555;
+      }
+
+      .ant-select {
+        width: 177px;
+
+        .ant-select-selector {
+          border-radius: 28px;
+          padding-left: 11px;
+          padding-left: 11px;
+          border: none;
+        }
+      }
+
+      .ant-select .ant-select-selector .ant-select-selection-placeholder {
+        line-height: 28px;
+      }
+
+      .ant-select-single .ant-select-selector .ant-select-selection-search {
+        left: 11px;
+      }
+    }
+
+    .input {
+      width: 170px;
+      border-radius: 10px;
+
+      button {
+        border: none;
+      }
+
+      .ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button {
+        border-radius: 0 10px 10px 0;
+      }
+
+      //  position: relative;
+      input {
+        border-radius: 10px 0 0 10px;
+      }
+
+      //  span{
+      //    position: absolute;
+      //    right: 10px;
+      //    top: 9px
+      //  }
+      //  span:hover{
+      //    color: #4fa1ff;
+      //  }
+    }
+
+    div {
+      //display: inline-block;
+      //width: 28px;
+      height: 28px;
+      //opacity: 0.65;
+      //background-color: #fff;
+      margin-bottom: -7px;
+      font-size: 12px;
+      //font-family: Microsoft YaHei;
+      //font-weight: bold;
+      color: #555555;
+      line-height: 28px;
+      text-align: center;
+      cursor: pointer;
+      margin-right: 5px;
+    }
+
+    .mapImg {
+      width: 28px;
+      background-color: #fff;
+    }
+
+    .dingWei {
+      width: 28px;
+      height: 28px;
+      background-color: #fff;
+      line-height: 28px;
+      font-size: 26px;
+    }
+
+    .iconfont {
+      font-size: 26px;
+      background-color: #fff;
+    }
+
+    .zuiDahua {
+      width: 28px;
+      height: 28px;
+      background-color: #fff;
+      text-align: center;
+    }
+  }
+}
+
+.mapBox {
+  position: relative;
+
+  .iconfont:active {
+    color: #54A4FF;
+  }
+
+  .iconfont:hover {
+    color: #54A4FF;
+  }
+
+  .number {
+    position: absolute;
+    top: 115px;
+    width: 101px;
+    left: 9px;
+    background-color: #fff;
+    opacity: 0.65;
+
+    .ant-input-number-handler-wrap {
+      opacity: 1;
+    }
+
+    .ant-input-number {
+      width: 101px;
+    }
+  }
+
+  .disabledAreanumber {
+    position: absolute;
+    top: 85px;
+    width: 101px;
+    left: 9px;
+    background-color: #fff;
+    opacity: 0.65;
+
+    .ant-input-number-handler-wrap {
+      opacity: 1;
+    }
+
+    .ant-input-number {
+      width: 101px;
+    }
+  }
+
+  .leftBox {
+    position: absolute;
+    top: 8px;
+    left: 9px;
+
+    //.input {
+    //  width: 101px;
+    //  border-radius: 10px;
+    //  border: none;
+    //  position: relative;
+    //  input{
+    //    border-radius: 20px;
+    //    border: none;
+    //  }
+    //  span{
+    //    position: absolute;
+    //    right: 10px;
+    //    top: 9px
+    //  }
+    //  span:hover{
+    //    color: #4fa1ff;
+    //  }
+    //}
+    div {
+      width: 101px;
+      height: 28px;
+      opacity: 0.65;
+      background-color: #fff;
+      margin-bottom: 10px;
+      font-size: 12px;
+      font-family: Microsoft YaHei;
+      font-weight: bold;
+      color: #555555;
+      line-height: 28px;
+      text-align: center;
+      cursor: pointer;
+
+      span {
+        margin-right: 2px;
+      }
+    }
+  }
+
+  .rightBox {
+    position: absolute;
+    top: 8px;
+    right: 9px;
+    display: flex;
+
+    .ant-checkbox-wrapper {
+      line-height: 26px;
+    }
+
+    .ant-input {
+      border: none;
+    }
+
+    .list2 {
+      position: relative;
+      float: left;
+      margin-right: 5px;
+
+      .ant-select-single:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-search-input {
+        display: block;
+        height: 26px;
+      }
+
+      & > .anticon-search {
+        position: absolute;
+        top: 9px;
+        right: 10px;
+        z-index: 2;
+        font-size: 10px;
+        color: #555;
+      }
+
+      & > .anticon-close-circle {
+        position: absolute;
+        top: 9px;
+        right: 10px;
+        z-index: 2;
+        font-size: 10px;
+        color: #555;
+      }
+
+      & > .iconfont {
+        position: absolute;
+        top: 7px;
+        right: 10px;
+        z-index: 2;
+        font-size: 10px;
+        color: #555;
+      }
+
+      .ant-select {
+        width: 177px;
+
+        .ant-select-selector {
+          border-radius: 28px;
+          padding-left: 11px;
+          padding-left: 11px;
+          text-align: left;
+          border: none;
+        }
+      }
+
+      .ant-select-single .ant-select-selector .ant-select-selection-search {
+        left: 11px;
+      }
+
+      .ant-select .ant-select-selector .ant-select-selection-placeholder {
+        line-height: 28px;
+      }
+
+      .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+        border: none;
+      }
+    }
+
+    .input {
+      width: 170px;
+      border-radius: 10px;
+
+      button {
+        border: none;
+      }
+
+      .ant-input-search > .ant-input-group > .ant-input-group-addon:last-child .ant-input-search-button {
+        border-radius: 0 10px 10px 0;
+      }
+
+      //  position: relative;
+      input {
+        border-radius: 10px 0 0 10px;
+      }
+
+      //  span{
+      //    position: absolute;
+      //    right: 10px;
+      //    top: 9px
+      //  }
+      //  span:hover{
+      //    color: #4fa1ff;
+      //  }
+    }
+
+    div {
+      //display: inline-block;
+      //width: 28px;
+      height: 28px;
+      //opacity: 0.65;
+      //background-color: #fff;
+      font-size: 12px;
+      //font-family: Microsoft YaHei;
+      //font-weight: bold;
+      color: #555555;
+      line-height: 28px;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .mapImg {
+      width: 28px;
+      background-color: #fff;
+      margin-right: 5px;
+    }
+
+    .dingWei {
+      width: 28px;
+      height: 28px;
+      background-color: #fff;
+      line-height: 28px;
+      font-size: 26px;
+      margin-right: 5px;
+    }
+
+    .iconfont {
+      font-size: 26px;
+      background-color: #fff;
+    }
+
+    .zuiDahua {
+      width: 28px;
+      height: 28px;
+      background-color: #fff;
+      text-align: center;
+    }
+  }
+}
+
+.site-drawer-render-in-current-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.mapLoading {
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: #fff;
+  opacity: 0.65;
+
+  .ant-spin-dot {
+    top: 50%
+  }
+}
+
+.upDownGPSZebra {
+  position: absolute;
+  left: 6px;
+  bottom: 40px;
+  width: 73px;
+  padding: 2px 5px;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  //cursor: pointer;
+  .heads {
+    height: 14px;
+    color: #333;
+    line-height: 14px;
+    font-weight: 700;
+    margin-bottom: 3px;
+  }
+
+  .tuli {
+    width: 100%
+  }
+
+  .bodys {
+    cursor: pointer;
+    height: 14px;
+    color: #666;
+    line-height: 14px;
+    transition: background 0.3s;
+    margin-bottom: 3px;
+
+    i, span {
+      float: left;
+    }
+
+    span {
+      margin-left: 3px;
+    }
+
+    i {
+      width: 12px;
+      height: 12px;
+      margin-top: 1px
+    }
+
+    // 急加减图例颜色控制
+    .jianSu {
+      background: #3386F1;
+      opacity: 0.8;
+    }
+
+    .jiaSu {
+      background: #1DC11D;
+      opacity: 0.8;
+    }
+
+    .xianCun {
+      background: #1791fc;
+      opacity: 0.8;
+    }
+
+    .tuiJian {
+      background: #2FC62F;
+      opacity: 0.8;
+    }
+
+    .xuanQu {
+      background: #ffff00;
+      opacity: 0.8;
+    }
+
+    .traffic {
+      background: orange;
+      opacity: 0.8;
+    }
+
+    .zebra {
+      background: green;
+      opacity: 0.8;
+    }
+
+    .chaoSu1 {
+      background: red;
+      opacity: 0.8;
+    }
+
+    .huiSe {
+      background: #bfbfbf;
+    }
+  }
+}
+
+.upDownGPSZebraFull {
+  position: fixed;
+  left: 6px;
+  bottom: 40px;
+  width: 74px;
+  padding: 2px 5px;
+  font-size: 12px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  //cursor: pointer;
+  .heads {
+    height: 14px;
+    color: #333;
+    line-height: 14px;
+    font-weight: 700;
+    margin-bottom: 3px;
+  }
+
+  .tuli {
+    width: 100%
+  }
+
+  .bodys {
+    cursor: pointer;
+    height: 14px;
+    color: #666;
+    line-height: 14px;
+    transition: background 0.3s;
+    margin-bottom: 3px;
+
+    i, span {
+      float: left;
+    }
+
+    span {
+      margin-left: 3px;
+    }
+
+    i {
+      width: 12px;
+      height: 12px;
+      margin-top: 1px
+    }
+
+    // 急加减图例颜色控制
+    .jianSu {
+      background: #3386F1;
+      opacity: 0.8;
+    }
+
+    .jiaSu {
+      background: #1DC11D;
+      opacity: 0.8;
+    }
+
+    .traffic {
+      background: orange;
+      opacity: 0.8;
+    }
+
+    .zebra {
+      background: green;
+      opacity: 0.8;
+    }
+
+    .chaoSu1 {
+      background: red;
+      opacity: 0.8;
+    }
+
+    .huiSe {
+      background: #bfbfbf;
+    }
+  }
+}
+
+.mapBox .rightBox {
+  .mapImg {
+
+    .ant-select-selector {
+      padding: 0;
+      border: none;
+      height: 26px;
+    }
+
+    .ant-select-arrow {
+      display: none;
+    }
+
+    .ant-select-single.ant-select-show-arrow .ant-select-selection-item, .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+      margin: 0;
+      padding: 0;
+    }
+
+    .ant-select-selection-item {
+      img {
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+
+.maxMapBox .rightBox {
+  .mapImg {
+
+    .ant-select-selector {
+      padding: 0;
+      border: none;
+      height: 26px;
+    }
+
+    .ant-select-arrow {
+      display: none;
+    }
+
+    .ant-select-single.ant-select-show-arrow .ant-select-selection-item, .ant-select-single.ant-select-show-arrow .ant-select-selection-placeholder {
+      margin: 0;
+      padding: 0;
+    }
+
+    .ant-select-selection-item {
+      img {
+        margin-bottom: 2px;
+      }
+    }
+  }
+}
+
+.lineUpDown {
+  position: absolute;
+  right: 20px;
+  top: 50px;
+  display: flex;
+
+  div {
+    width: 60px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    opacity: 0.65;
+    background-color: #fff;
+    margin-right: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
+
+.clearUpMap {
+  position: absolute;
+  left: 125px;
+  top: 10px;
+  width: 101px;
+  height: 28px;
+  opacity: 0.65;
+  background-color: #fff;
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-family: Microsoft YaHei;
+  font-weight: bold;
+  color: #555555;
+  line-height: 28px;
+  text-align: center;
+  cursor: pointer;
+
+  span {
+    margin-right: 2px;
+  }
+}
+
+.mapImg-optation {
+  width: 28px !important;
+}

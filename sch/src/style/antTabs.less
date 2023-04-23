@@ -1,0 +1,30 @@
+.ant-tabs-ink-bar{
+  display: none;
+}
+:where(.css-dev-only-do-not-override-10ed4xt).ant-tabs .ant-tabs-tab+.ant-tabs-tab{
+  font-size: 14px;
+  margin: 0;
+  font-weight: 600;
+
+  &::before{
+    content: "|";
+    padding: 0 10px;
+    color: #aaaaaa;
+  }
+}
+:where(.css-dev-only-do-not-override-10ed4xt).ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn{
+  color: #0C0C0C;
+}
+
+.ant-tabs-tab .ant-tabs-tab-btn{
+  font-size: 14px;
+  font-weight: 600;
+  color: #aaaaaa;
+}
+
+.ant-tabs-tab:not(.ant-tabs-tab-active):hover .ant-tabs-tab-btn{
+  color: #0C0C0C;
+}
+.ant-tabs >.ant-tabs-nav {
+  margin: 0 0 13px 0;
+}

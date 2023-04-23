@@ -1,0 +1,167 @@
+// 表格样式
+.tableBox {
+  overflow: hidden;
+
+  // tables选择框行高问题提： 因为antd设置了line-height: upset; 暂时用这种方式解决行高问题 2022-11-30
+  .ant-checkbox-wrapper {
+    margin-top: -4px;
+  }
+
+  //.tables {
+  //  background: #fff;
+  //  padding: 0 10px 10px;
+  //  margin-bottom: 10px;
+  //
+  //  .tdHover {
+  //    background: #e6f7ff;
+  //  }
+  //
+  //  .trHover td {
+  //    background: #e6f7ff;
+  //  }
+  //
+  //  //.ant-table {
+  //  //  color: #363636;
+  //  //  .ant-table-cell{
+  //  //    .iconfont + .iconfont{
+  //  //      margin-left: 0;
+  //  //    }
+  //  //  }
+  //  //}
+  //
+  //  thead {
+  //    border-bottom-color: #e6e9ed;
+  //    .ant-table-column-sorters{
+  //      .columnTooltip{
+  //        position: relative;
+  //        z-index: 1;
+  //      }
+  //    }
+  //  }
+  //
+  //  .ant-table-thead > tr > th {
+  //    color: #999;
+  //    background: transparent;
+  //  }
+  //  .ant-table-tbody > tr > td > .ant-tag {
+  //    height: 18px;
+  //    line-height: 17px;
+  //  }
+  //}
+
+  // 分页展示数据
+  //.pagination{
+  //  margin-bottom: 56px;
+  //  text-align: right;
+  //}
+
+  //.station {
+  //  width: 36px;
+  //  height: 24px;
+  //  border: 1px solid #dddddd;
+  //  text-align: center;
+  //  margin-left: 2px;
+  //  margin-bottom: 2px;
+  //}
+  .ant-table-thead
+    > tr
+    > th:not(:last-child):not(.ant-table-selection-column):not(
+      .ant-table-row-expand-icon-cell
+    ):not([colspan])::before {
+    width: 0;
+  }
+
+  .tables .ant-table-header .ant-table-thead > tr > th {
+    height: 13px;
+    font-size: 12px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #0c0c0c;
+    line-height: 13px;
+  }
+
+  //.tables .ant-table-body .ant-table-tbody > tr > td{
+  //  height: 13px;
+  //  font-size: 12px;
+  //  font-family: Microsoft YaHei;
+  //  font-weight: 400;
+  //  color: #555555;
+  //  line-height: 13px;
+  //}
+
+  .tables + div.pagination{
+    margin-bottom: 0;
+  }
+}
+
+//.clear-tableBox{
+//  .tables{
+//    padding-right: 0;
+//    padding-left: 0;
+//  }
+//}
+
+.table-cell-red {
+  display: inline-block;
+  font-size: 12px;
+  padding: 2px 6px;
+  color: #fff;
+  background: #d6252d;
+  border-radius: 2px;
+}
+
+.tableBox .tables .ant-table-header .ant-table-thead > tr > th {
+  background-color: #fff;
+}
+
+.tables {
+  .ant-table-body {
+    td {
+      .operation {
+        .iconfont {
+          color: #54a4ff;
+          font-size: 12px;
+        }
+
+        .disabled-span {
+          color: #ccc !important;
+          cursor: not-allowed !important;
+
+          &:hover {
+            cursor: not-allowed !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-table {
+  .ant-table-tbody {
+    td {
+      .operation {
+        .iconfont {
+          color: #54a4ff;
+          font-size: 12px;
+        }
+
+        .disabled-span {
+          color: #ccc !important;
+          cursor: not-allowed !important;
+
+          &:hover {
+            cursor: not-allowed !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  .changeJump {
+    .ant-pagination .ant-pagination-options-quick-jumper {
+      display: none;
+    }
+  }
+}

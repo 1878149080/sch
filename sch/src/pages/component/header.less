@@ -1,0 +1,58 @@
+.site-layout {
+  // 右侧整体据左侧位置
+  position: relative;
+  //margin-left: 262px;
+  margin-left: 250px;
+
+  .header-box {
+    position: fixed;
+    top: 6px;
+    right: 4px;
+    z-index: 51;
+    height: 60px;
+    padding-right: 10px;
+    line-height: 60px;
+
+    .userName {
+      margin-right: 26px;
+      margin-left: 8px;
+      font-size: 12px;
+      color: #0C0C0C;
+    }
+
+    .anticon {
+      font-size: 16px;
+      color: #231815;
+
+      & + .anticon {
+        margin-left: 16px;
+      }
+    }
+
+    .userImg {
+      font-size: 22px;
+    }
+
+    .ant-avatar {
+      width: 25px;
+      height: 25px;
+      background: #ccc;
+
+      .anticon {
+        //margin-left: 0;
+        font-size: 16px;
+        vertical-align: text-top;
+      }
+    }
+  }
+
+  // 标签页控制
+  & > .ord-tabs-layout-large > .ord-pane-layout {
+    margin-left: 12px;
+  }
+}
+
+// 收起菜单后，宽度需要变更
+.site-layout-collapsed {
+  margin-left: 60px;
+}

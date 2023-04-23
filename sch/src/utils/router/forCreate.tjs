@@ -1,0 +1,10 @@
+import React from 'react';
+
+export function forCreate(arr = []) {
+  let routers: any = {};
+  arr.map((item) => {
+    const { router, url } = item;
+    routers[router] = React.lazy(() => import(url));
+  });
+  return routers;
+}

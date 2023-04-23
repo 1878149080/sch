@@ -1,0 +1,117 @@
+.bodys {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(../images/bmw.jpg) center no-repeat;
+  background-size: cover;
+  //filter: blur(15px);/*为了模糊更明显，调高模糊度*/
+}
+
+.loginH1 {
+  position: absolute;
+  top: -100px;
+  left: 0;
+  width: 100%;
+  font-size: 32px;
+  text-align: center;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -124px 0 0 -213.5px;
+  width: 427px !important;
+  height: 168px !important;
+  padding: 40px;
+  background: rgba(255, 255, 255, .8);
+  border-radius: 3px;
+  box-shadow: 0 0 100px rgba(0, 0, 0, .08);
+
+  :global {
+    .ant-input {
+      border-radius: 3px;
+      padding: 1px 5px;
+      height: 28px;
+    }
+
+    .ant-row {
+      margin-bottom: 12px;
+    }
+
+    .ant-form-item-children input {
+      background: rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  button {
+    //width: 270px;
+    //margin-left: 35px;
+    width: 320px;
+    margin-left: 10px;
+    opacity: 0.78;
+  }
+
+  p {
+    color: rgb(204, 204, 204);
+    text-align: center;
+    margin-top: 16px;
+
+    span {
+      &:first-child {
+        margin-right: 16px;
+      }
+    }
+  }
+
+  .qieHuan {
+    text-align: center;
+    color: #1890ff;
+    text-decoration: underline;
+  }
+
+  .dengLu {
+    position: absolute;
+    bottom: -90px;
+  }
+}
+
+.logo {
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  cursor: pointer;
+  margin-bottom: 24px;
+
+  img {
+    width: 40px;
+    margin-right: 8px;
+  }
+
+  span {
+    vertical-align: text-bottom;
+    font-size: 16px;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+}
+
+.ant-spin-container,
+.ant-spin-nested-loading {
+  height: 100%;
+}
+
+.me {
+  .ant-checkbox-checked .ant-checkbox-inner {
+    background-color: #fff;
+    border-color: #fff;
+  }
+
+  .ant-checkbox-checked .ant-checkbox-inner:after {
+    border-color: #108ee9;
+  }
+}

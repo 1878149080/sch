@@ -1,0 +1,51 @@
+.user {
+  .leftRightBox {
+    //width: 100%;
+    width: calc(100% - 2px);
+    height: 100%;
+    font-size: 0;
+    //overflow: ;
+    .leftBox {
+      display: inline-block;
+      height: 100%;
+      width: 250px;
+
+      .tree_box {
+        position: relative;
+
+        .ant-card-body {
+          height: e("calc(100vh - 140px)");
+        }
+      }
+    }
+
+    .rightBox {
+      display: inline-block;
+      height: 100%;
+      vertical-align: top;
+      background: #fff;
+
+      & > .search {
+        padding-top: 10px;
+
+        .ant-form-item {
+          margin-bottom: 0px;
+        }
+      }
+    }
+
+    .ant-tree {
+      font-size: 12px;
+    }
+  }
+}
+
+.system-user-modal{
+  .ant-checkbox-group{
+    display: block;
+
+    .ant-checkbox-wrapper + .ant-checkbox-wrapper{
+      margin-left: 0;
+    }
+  }
+}

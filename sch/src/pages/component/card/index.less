@@ -1,0 +1,75 @@
+.qyhd-card {
+  background: #fff;
+  border-radius: 6px;
+}
+
+.qyhd-card-titleBox {
+  width: 100%;
+  height: 43px;
+  border-bottom: 1px solid #dddd;
+}
+
+.qyhd-card-title {
+  float: left;
+  padding-left: 14px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #0C0C0C;
+  line-height: 43px;
+}
+
+.qyhd-card-extra {
+  float: right;
+}
+
+.qyhd-card-isMaximize {
+  float: right;
+  margin-top: 10px;
+}
+
+.qyhd-card-content {
+}
+
+
+// 小尺寸
+.qyhd-card-small {
+  .qyhd-card-titleBox {
+    height: 40px;
+  }
+
+  .qyhd-card-title {
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 40px;
+  }
+}
+
+// 最大化
+.qyhd-card-maximize-mask {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1000;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.qyhd-card-maximize {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+
+  .qyhd-card-isMaximize {
+    margin-right: 14px;
+  }
+}
+
+.qyhd-card-maximize.qyhd-card-small {
+  .qyhd-card-title {
+    padding-left: 14px;
+  }
+}

@@ -1,0 +1,81 @@
+// 分页查询的查询条件通用样式
+.searchBox {
+  width: 100%;
+  //padding: 20px 0 0 30px;
+  padding: 14px 14px 4px 14px;
+  background: #fff;
+  border-radius: 10px;
+
+  .ant-btn-primary {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .ant-btn {
+    //line-height: 18px;
+    & + .ant-btn {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+
+  .ant-form-inline {
+    .ant-form-item {
+      margin-right: 0;
+      margin-bottom: 5px;
+
+      //.ant-select-selector {
+      //  height: 28px;
+      //  line-height: 28px;
+      //  .ant-select-selection-item {
+      //    line-height: 28px;
+      //  }
+      //  .ant-select-selection-placeholder {
+      //    line-height: 28px;
+      //  }
+      //}
+
+      // 日历组件
+      //.ant-picker {
+      //  height: 28px;
+      //}
+    }
+
+    //.ant-form-item-control-input{
+    //  min-height: 28px;
+    //}
+
+    //button.ant-btn[disabled] {
+    //  background: #f5f5f5;
+    //}
+  }
+
+  .ant-select-selector {
+    overflow: hidden;
+  }
+
+  .ant-select-selection-overflow {
+    flex-flow: nowrap;
+  }
+}
+
+.custom-date {
+  display: flex;
+
+  .custom-date-divider {
+    margin: 0 0;
+    height: 100%;
+    margin-top: 3px;
+  }
+  &>.ant-col:nth-of-type(1) {
+    padding-left: 0 !important;
+  }
+
+}
+
+// 特殊处理查询条件样式
+.searchBox2 {
+  .ant-form-inline {
+    display: block;
+  }
+}

@@ -1,0 +1,75 @@
+// 最大化
+.MaximizeWindows,
+.MaximizeWiondows,
+.modalWindows {
+  position: fixed !important;
+  top: 0px !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: 0px !important;
+  z-index: 999 !important;
+  width: auto !important;
+  height: 100% !important;
+}
+
+// 最大化后的样式
+.tableTool.MaximizeWindows {
+  background: #fff;
+
+  .tableBox {
+    margin: 0 10px;
+    .btnGroup a {
+      color: #1677ff;
+      font-size: 12px;
+      cursor: pointer;
+      transition: color 0.3s;
+    }
+  }
+}
+
+.tableBox .headers {
+  margin-right: 14px;
+  margin-left: 14px;
+  font-size: 0;
+  height: 40px;
+  line-height: 40px;
+  border-bottom: 1px solid #ddd;
+
+  .titles {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #0c0c0c;
+  }
+}
+
+.tableBox .btnGroup {
+  float: right;
+  text-align: right;
+}
+
+.tableBox .btnGroup a {
+  //float: left;
+  font-size: 12px;
+
+  .iconfont {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 16px;
+    vertical-align: text-top;
+  }
+
+  .anticon,
+  .iconfont {
+    margin-right: 2px;
+  }
+}
+
+.tableBox .btnGroup a.disabled {
+  color: #999 !important;
+  cursor: not-allowed !important;
+}
+
+.tableBox .btnGroup a + a {
+  margin-left: 10px;
+}

@@ -1,0 +1,201 @@
+
+.qyhd-layout-tabs {
+  flex: 1;
+}
+
+.qyhd-tabs {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 260px;
+  z-index: 50;
+  height: 60px;
+  margin-left: -14px;
+  overflow: hidden;
+  border-radius: 2px;
+  background: #f7f7f7;
+
+  // 每个标签的固定宽度
+  .list {
+    float: left;
+    position: relative;
+    //width: 215px;
+    //height: 30px;
+    margin-top: 24px;
+    padding-right: 28px;
+    padding-left: 28px;
+    //background: #fff;
+    font-size: 14px;
+    color: #888;
+    line-height: 30px;
+    //text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+
+    &::before {
+      position: absolute;
+      top: 9px;
+      left: 0;
+      width: 1px;
+      height: 12px;
+      //background: #e6e9ed;
+      content: '';
+      pointer-events: none;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:hover .anticon {
+      opacity: 1;
+      cursor: pointer;
+    }
+
+    .anticon {
+      opacity: 0;
+      padding: 10px;
+      font-size: 12px;
+      vertical-align: initial;
+      transition: opacity, color 0.5s;
+
+      &:hover {
+        color: @main-color;
+      }
+    }
+
+  }
+
+  .list:hover {
+    color: #0C0C0C;
+  }
+
+  .active {
+    font-size: 20px;
+    color: #0C0C0C;
+  }
+}
+
+// 标签内容区域
+.tab-pane {
+  //margin-top: 60px;
+  margin-top: 72px;
+
+  .hide {
+    display: none;
+    height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+}
+
+// 时间牌的标签页
+.tabs-1 {
+  .ant-tabs-nav {
+    height: 41px !important;
+    margin-bottom: 0 !important;
+    background: #fff !important;
+
+    .ant-tabs-tab-remove {
+      margin-bottom: 10px !important;
+      margin-left: 4px !important;
+    }
+
+    .ant-tabs-extra-content {
+      margin-right: 20px !important;
+    }
+  }
+
+  .ant-tabs-nav-list {
+    border-bottom: 1px solid #f0f0f0 !important;
+  }
+
+  //.ant-tabs-card.ant-tabs-small > .ant-tabs-nav .ant-tabs-tab {
+  //  padding: 13px 20px 3px !important;
+  //}
+  .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+    font-size: 16px !important;
+    color: #0c0c0c !important;
+    font-weight: 700 !important;
+  }
+
+  .ant-tabs-tab {
+    position: relative;
+    color: #888 !important;
+    border: 0 !important;
+    background: #fff !important;
+
+    &:before {
+      position: absolute;
+      top: 17px;
+      right: 0;
+      z-index: 1;
+      content: '';
+      width: 1px;
+      height: 13px;
+      background: #ddd;
+    }
+
+    &:last-child {
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  .ant-tabs-tab:not(:nth-last-child(1)) {
+    &:after {
+      position: absolute;
+      top: 17px;
+      right: 0;
+      z-index: 1;
+      content: '';
+      width: 1px;
+      height: 13px;
+      background: #fff;
+    }
+  }
+
+  //.ant-tabs-nav-list .ant-tabs-tab:not(:nth-last-child(2)) div::before{
+  //  background: #fff !important;
+  //}
+  .ant-tabs-tab:hover {
+    color: #0c0c0c !important;
+  }
+}
+
+.ant-tabs-tab-active .ant-tabs-tab-btn {
+  #num {
+    margin-left: 5px;
+    width: 24px;
+    height: 18px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #3486F2;
+    line-height: 18px;
+    background-color: #EBF3FF;
+  }
+}
+
+.ant-tabs-tab-btn {
+  #num {
+    margin-left: 5px;
+    width: 24px;
+    height: 18px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+    font-family: Microsoft YaHei;
+    font-weight: 400;
+    color: #676665;
+    line-height: 18px;
+    background-color: #F4F4F4;
+    border-radius: 4px;
+  }
+}

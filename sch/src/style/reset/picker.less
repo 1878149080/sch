@@ -1,0 +1,183 @@
+/** 表单元素重置样式  **/
+body {
+  // 边框颜色
+  @border-color: #ececec;
+  @border-color-ddd: #ddd;
+
+  // 标题重要信息颜色
+  @font-color-0c: #0c0c0c;
+  // 正文字体颜色
+  @font-color-555: #555;
+  // 辅助字体颜色
+  @font-color-888: #888;
+  // 次级辅助字体颜色
+  @font-color-999: #999;
+  // 只读字体颜色
+  @font-color-placeholder: #a4a4a4;
+
+  // hove颜色
+  @hove-color: #4fa1ff;
+
+  /** range-picker */
+  .ant-picker-range {
+    width: 100%;
+  }
+
+  /** 日历 **/
+  // 范围日历
+  .ant-picker {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    width: 100%;
+    font-size: 12px;
+    border-color: @border-color;
+    border-radius: 3px;
+  }
+
+  .ant-picker-input > input {
+    color: @font-color-555;
+    font-size: 12px;
+    &::placeholder {
+      color: @font-color-placeholder !important;
+      font-size: 12px !important;
+    }
+  }
+
+  // 大尺寸
+  .ant-picker-large {
+    padding: 7px 11px 7px;
+  }
+
+  .ant-picker-large .ant-picker-input > input {
+    font-size: 12px;
+  }
+
+  // 下拉展示
+  .ant-picker-dropdown {
+    font-size: 12px;
+    .ant-picker-panel-container{
+      border-radius: 3px !important;
+    }
+
+    .ant-picker-decade-panel,
+    .ant-picker-year-panel,
+    .ant-picker-quarter-panel,
+    .ant-picker-month-panel,
+    .ant-picker-week-panel,
+    .ant-picker-date-panel,
+    .ant-picker-time-panel {
+      width: 184px;
+    }
+
+    .ant-picker-header button {
+      color: @font-color-0c;
+      font-size: 12px;
+      line-height: 26px;
+      font-weight: 400;
+    }
+
+    .ant-picker-header-view {
+      font-size: 12px;
+      line-height: 26px;
+    }
+
+    .ant-picker-date-panel .ant-picker-body {
+      //padding: 2px 0px;
+      //padding: 0;
+      padding: 0 0 5px 0;
+    }
+
+    .ant-picker-date-panel .ant-picker-content {
+      width: 182px;
+    }
+
+    .ant-picker-cell-in-view {
+      color: @font-color-888;
+    }
+
+    .ant-picker-content tr {
+      margin-bottom: 2px;
+    }
+
+    .ant-picker-date-panel .ant-picker-content th {
+      width: 24px;
+    }
+
+    .ant-picker-content th {
+      height: 20px;
+      color: @font-color-0c;
+      line-height: 20px;
+    }
+
+    .ant-picker-content th,
+    .ant-picker-content td {
+      min-width: 18px;
+    }
+
+    .ant-picker-cell {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .ant-picker-cell .ant-picker-cell-inner {
+      height: 18px;
+      min-width: 18px;
+      line-height: 18px;
+      font-size: 12px;
+    }
+
+    .ant-picker-cell-selected {
+      .ant-picker-cell-inner {
+        &::selection {
+          background: none;
+        }
+      }
+    }
+
+    .ant-picker-cell-in-view.ant-picker-cell-selected .ant-picker-cell-inner,
+    .ant-picker-cell-in-view.ant-picker-cell-range-start .ant-picker-cell-inner,
+    .ant-picker-cell-in-view.ant-picker-cell-range-end .ant-picker-cell-inner {
+      border-radius: 100%;
+    }
+
+    .ant-picker-cell-in-view.ant-picker-cell-today
+    .ant-picker-cell-inner::before {
+      border-radius: 25px;
+    }
+
+    .ant-picker-cell.ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-start::before,
+    .ant-picker-cell.ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-end::before {
+      //.ant-picker-cell.ant-picker-cell-in-view.ant-picker-cell-range-hover-start::before {
+      background: #cbe6ff;
+    }
+
+    .ant-picker-cell::before {
+      height: 18px;
+    }
+
+    .ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single):not(.ant-picker-cell-range-end)
+    .ant-picker-cell-inner {
+      border-radius: 100%;
+    }
+
+    .ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single):not(.ant-picker-cell-range-start)
+    .ant-picker-cell-inner {
+      border-radius: 100%;
+    }
+
+    .ant-picker-footer {
+      line-height: 24px;
+    }
+
+    .ant-picker-panels {
+      .ant-picker-panel + .ant-picker-panel {
+        margin-left: 5px;
+      }
+    }
+
+    .ant-picker-focused {
+      border-color: @hove-color;
+      box-shadow: none;
+    }
+  }
+}

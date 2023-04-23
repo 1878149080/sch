@@ -1,0 +1,161 @@
+.qy-login {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 9999;
+  width: 1200px;
+  height: 580px;
+  margin-top: -290px;
+  margin-left: -600px;
+  background: url('../../images/login/loginbox.jpg') no-repeat 50% 50%;
+  background-size: cover;
+
+  .qy-login-position {
+    position: absolute;
+    top: 180px;
+    left: 740px;
+    width: 244px;
+    //background: rgba(255,255,255,0.5);
+
+    .qy-login-position-box {
+      height: 26px;
+
+      & + .qy-login-position-box {
+        margin-top: 38px;
+      }
+
+      & > span {
+        float: left;
+      }
+
+      .loginName,
+      .miMa,
+      .code {
+        margin-right: 12px;
+        line-height: 0;
+
+        .iconfont {
+          color: #fff;
+          font-size: 26px;
+          line-height: 26px;
+          cursor: default;
+
+          &:hover {
+            color: #fff;
+            cursor: default;
+          }
+        }
+      }
+
+      .name,
+      .loginMiMa,
+      .loginCode {
+        border-bottom: 2px solid #fff;
+
+        input {
+          width: 206px;
+          font-size: 14px;
+          font-family: Microsoft YaHei;
+          font-weight: 300;
+          color: #ffffff;
+          border: 0;
+          background: transparent;
+
+          &::placeholder {
+            color: #f7f7f7;
+            //color: #d4d4d4;
+          }
+
+          &:focus,
+          &:focus-visible {
+            border: none;
+            outline: none;
+          }
+        }
+      }
+
+      .loginCode {
+        position: relative;
+
+        .qy-login-position-box-captcha {
+          position: absolute;
+          right: 0;
+          bottom: -4px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    // 错误提示语
+    .qy-login-error {
+      height: 14px;
+      margin: 26px auto 0;
+      text-align: center;
+      font-size: 14px;
+      line-height: 14px;
+      font-family: Microsoft YaHei;
+      font-weight: 400;
+      color: #f4ce4b;
+
+      .anticon {
+        margin-right: 8px;
+        font-size: 14px;
+        line-height: 14px;
+      }
+    }
+  }
+
+  // 按钮
+  .loginButton {
+    margin-top: 30px;
+    margin-left: 60px;
+    width: 120px;
+    height: 36px;
+    font-size: 16px;
+    font-family: Microsoft YaHei;
+    font-weight: bold;
+    color: #154dcd;
+    border-radius: 6px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: #154dcd;
+      background: #fff;
+    }
+
+    //body .ant-btn:active {
+    //  color: #999;
+    //  background: none;
+    //  border-color: #ececec;
+    //}
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1470px) {
+  .qy-login {
+    width: 900px;
+    height: 435px;
+    margin-top: -217px;
+    margin-left: -450px;
+
+    .qy-login-position {
+      top: 135px;
+      left: 555px;
+    }
+  }
+}
+
+@media (max-width: 1119px) {
+  .qy-login {
+    width: 900px;
+    height: 435px;
+    margin-top: -217px;
+    margin-left: -450px;
+
+    .qy-login-position {
+      top: 135px;
+      left: 555px;
+    }
+  }
+}
